@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<form action="reg.php" method="POST">
+<form action="auto.php" method="POST">
         <label for="email">почта</label>
         <input type="email" name="email" id="email">
     <br>
@@ -15,26 +15,13 @@
         <input type="text" name="name" id="name">
     <br>
     <br>
+   
         <label for="pass">пароль </label>
         <input type="password" name="pass" id="pass">
     <br>
     <br>
-        <label for="birthday">дата рождения </label>
-        <input type="date" name="birthday" id="birthday">
-    <br>
-    <br>
-        <div class="flex-sex">
-        <div class="sex">
-    <label for="sex">жен </label>
-    <input type="radio" name="sex" id="sex" value="жен">
-        </div>
-        <div class="sex">
-    <label for="sex">муж </label>
-    <input type="radio" name="sex" id="sex" value="муж">
-        </div>
-        </div>
     
-        <button type="submit">зарегистрироваться</button>
+    <button type="submit">войти</button>
     </form>
 </body>
 </html>
