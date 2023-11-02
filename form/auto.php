@@ -6,27 +6,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<form action="auto.php" method="POST">
-        <label for="email">почта</label>
-        <input type="email" name="email" id="email">
-    <br>
-    <br>
-    <label for="name">имя</label>
-        <input type="text" name="name" id="name">
-    <br>
-    <br>
-   
-        <label for="pass">пароль </label>
-        <input type="password" name="pass" id="pass">
-    <br>
-    <br>
-    
-    <button type="submit">войти</button>
-    </form>
-</body>
-</html>
+<div class="container">
+    <header>
+        <img src="img/лого.png" alt="1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </header>
 
-<?php
+<div class="block-form">
+    <form action="auto.php" method="POST">
+<div class="flex-input">
+        <h1><span>Food</span><span>Diary</span> </h1>
+        <?php
 if (isset($_GET["name"])) {
     echo "<h2>Привет, GET " . $_GET["name"] . "! </h2>";
 }
@@ -34,4 +27,26 @@ if (isset($_GET["name"])) {
 if (isset($_POST["name"])) {
     echo "<h2>Привет, " . $_POST["name"] . "! </h2>";
 }
+?>
+        <input type="email" name="email" id="email" placeholder="Логин">
+
+        <input type="text" name="name" id="name" placeholder="Имя">
+
+
+        <input type="password" name="pass" id="pass" placeholder="Пароль">
+    
+
+        
+    
+        
+        <button type="submit" class="btn-2">Войти</button>
+
+        <p class="p-2">У вас еще нет аккаунта? Тогда  <span> <a href="reg.html">Зарегистрируйтесь</a> </span></p>
+    </form>
+</div>
+</div>
+</body>
+</html>
+
+
 
